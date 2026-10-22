@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,9 @@
       <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
       <div class="nav-links" id="navLinks">
         <a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#courses">Courses</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Join us <span>↗</span></a>
+        <a class="nav-cta" href="#contact" data-i18n="join">Join us <span>↗</span></a>
+        <button class="utility-toggle" id="languageToggle" type="button" aria-label="Switch language">العربية</button>
+        <button class="utility-toggle theme-toggle" id="themeToggle" type="button" aria-label="Enable dark mode">☾ <span data-i18n="darkMode">Dark mode</span></button>
       </div>
     </nav>
   </header>
