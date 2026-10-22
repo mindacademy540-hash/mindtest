@@ -35,3 +35,41 @@ a.contact-detail:hover{transform:translateX(4px)}
 .footer-socials a{color:#9eacc3;text-decoration:none;font-size:11px;font-weight:600;transition:color .2s}
 .footer-socials a:hover{color:#fff}
 @media(max-width:700px){.footer-socials{order:4;width:100%;margin:5px 0 0;gap:14px}.social-links{gap:8px}.social-link{font-size:11px;padding:9px 10px}}
+
+/* Language and appearance controls */
+.utility-toggle{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:9px;padding:9px 11px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;transition:all .2s}
+.utility-toggle:hover{border-color:#9bc8ff;color:var(--blue)}
+.theme-toggle{display:inline-flex;align-items:center;gap:6px}
+html[dir="rtl"] body{font-family:Tahoma,Arial,sans-serif}
+html[dir="rtl"] .hero h1,html[dir="rtl"] .section-heading h2,html[dir="rtl"] .section-top h2,html[dir="rtl"] .contact-copy h2,html[dir="rtl"] .projects-content h2{letter-spacing:0}
+html[dir="rtl"] .hero-proof p,html[dir="rtl"] .course-card,html[dir="rtl"] .contact-form,html[dir="rtl"] .about-card,html[dir="rtl"] .projects-content{text-align:right}
+html[dir="rtl"] .hero-actions,html[dir="rtl"] .hero-proof,html[dir="rtl"] .course-top,html[dir="rtl"] .footer-main,html[dir="rtl"] .footer-bottom{direction:rtl}
+html[dir="rtl"] .social-link,html[dir="rtl"] .contact-detail{direction:rtl}
+html[dir="rtl"] .nav-cta span{margin-left:0;margin-right:8px}
+html[dir="rtl"] .hero-bottom{direction:rtl}
+html[dir="rtl"] .back-top{direction:rtl}
+body.dark-mode{--ink:#e6edf8;--muted:#a8b5ca;--pale:#111a2b;--white:#141f32;--line:#2a3850;--shadow:0 18px 55px rgba(0,0,0,.24);background:#101827;color:#e6edf8}
+body.dark-mode .site-header{background:rgba(16,24,39,.92);border-bottom-color:#26334a}
+body.dark-mode .brand,body.dark-mode .hero h1,body.dark-mode .section-heading h2,body.dark-mode .section-top h2,body.dark-mode .contact-copy h2,body.dark-mode .about-card h3,body.dark-mode .course-card h3,body.dark-mode .contact-detail strong,body.dark-mode .contact-form h3,body.dark-mode .courses-note strong{color:#e6edf8}
+body.dark-mode .hero{background:linear-gradient(115deg,#111a2b 0%,#101827 52%,#131e31 100%)}
+body.dark-mode .intro-section,body.dark-mode .footer{background:#101827}
+body.dark-mode .courses-section,body.dark-mode .contact-section{background:#141f32}
+body.dark-mode .about-card,body.dark-mode .course-card,body.dark-mode .contact-form{background:#18243a;border-color:#2a3850}
+body.dark-mode .secondary,body.dark-mode .social-link,body.dark-mode .social-links a{background:#18243a;color:#e6edf8;border-color:#2a3850}
+body.dark-mode .nav-links{color:#b2bfd3}
+body.dark-mode .nav-cta{background:#2a3b5b}
+body.dark-mode .utility-toggle{background:#18243a;color:#e6edf8;border-color:#34445f}
+body.dark-mode .menu-toggle span{background:#e6edf8}
+body.dark-mode .eyebrow{background:#18243a;border-color:#2a3850;color:#a8b5ca}
+body.dark-mode .hero-lead,body.dark-mode .section-heading>p,body.dark-mode .section-top>p,body.dark-mode .about-card p,body.dark-mode .course-card>p,body.dark-mode .contact-copy>p,body.dark-mode .contact-form>p{color:#a8b5ca}
+body.dark-mode .courses-note{background:#1a2c47;border-color:#2c466b}
+body.dark-mode .courses-note p{color:#b6c5da}
+body.dark-mode .contact-form input,body.dark-mode .contact-form select,body.dark-mode .contact-form textarea{background:#111a2b;border-color:#34445f;color:#e6edf8}
+body.dark-mode .contact-form label{color:#d1dced}
+body.dark-mode .tags span{background:#202d43;border-color:#34445f;color:#c1cde0}
+body.dark-mode .course-link{border-top-color:#2a3850}
+body.dark-mode .footer-main{border-bottom-color:#2a3850}
+body.dark-mode .footer-main>p{color:#a8b5ca}
+body.dark-mode .big-number{color:#25334b}
+body.dark-mode .form-feedback{background:#1a2c47;color:#c8ddff}
+@media(max-width:700px){.nav-links{align-items:stretch} .utility-toggle{margin:5px 0;text-align:center;justify-content:center}body.dark-mode .nav-links{background:#18243a;border-color:#2a3850}}
