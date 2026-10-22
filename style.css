@@ -12,7 +12,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 
-
 /* Contact links and social profiles */
 a.contact-detail{color:inherit;text-decoration:none;transition:transform .2s}
 a.contact-detail:hover{transform:translateX(4px)}
@@ -22,3 +21,17 @@ a.contact-detail:hover{transform:translateX(4px)}
 .social-symbol{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:7px;background:#edf4ff;color:#1678f2;font-weight:800;font-size:13px}
 .external-arrow{color:#8c98ac;margin-left:6px}
 @media(max-width:700px){.social-links{margin-top:20px}}
+
+
+/* Contact details and official social links */
+.contact-link{text-decoration:none;color:inherit}
+.contact-link:hover strong{color:#1678f2}
+.social-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.social-link{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #dfe7f3;border-radius:9px;background:#fff;color:var(--navy);font-size:12px;font-weight:700;text-decoration:none;transition:transform .2s,border-color .2s,color .2s}
+.social-link:hover{transform:translateY(-2px);border-color:#9bc8ff;color:#1678f2}
+.social-link>span:first-child{display:inline-grid;place-items:center;min-width:19px;height:19px;border-radius:5px;background:#e8f2ff;color:#1678f2;font-weight:800}
+.social-link .external-arrow{color:#8793a8;font-size:13px}
+.footer-socials{display:flex;flex-wrap:wrap;gap:16px;margin-left:auto;margin-right:24px}
+.footer-socials a{color:#9eacc3;text-decoration:none;font-size:11px;font-weight:600;transition:color .2s}
+.footer-socials a:hover{color:#fff}
+@media(max-width:700px){.footer-socials{order:4;width:100%;margin:5px 0 0;gap:14px}.social-links{gap:8px}.social-link{font-size:11px;padding:9px 10px}}
